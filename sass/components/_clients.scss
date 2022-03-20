@@ -1,0 +1,46 @@
+.clients-set {
+  display: flex;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+.clients-set__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-text-color);
+  }
+
+  &:hover .clients-set__icon,
+  &:focus .clients-set__icon {
+    fill: var(--accent-text-color);
+  }
+}
+
+.clients-set__icon {
+  fill: var(--icon-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}

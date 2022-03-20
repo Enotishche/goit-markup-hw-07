@@ -1,0 +1,38 @@
+.footer--flex-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__contacts--margin {
+  margin-right: 70px;
+}
+
+.footer-address {
+  color: var(--primary-white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.footer-address__location {
+  color: var(--primary-white-color);
+}
+
+.footer-address__email,
+.footer-address__tel {
+  color: var(--additional-color);
+}
+
+.footer-address__contacts {
+  margin-top: 9px;
+}
+
+.footer-address__map {
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: var(--hero-bcg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
